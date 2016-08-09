@@ -5,7 +5,7 @@ using AllReady.Areas.Admin.ViewModels.Request;
 
 namespace AllReady.Areas.Admin.Features.Requests
 {
-    public class RequestListItemsQuery : IAsyncRequest<List<RequestListModel>>
+    public class RequestListItemsQuery : IAsyncRequest<List<RequestListViewModel>>
     {
         public RequestSearchCriteria Criteria { get; set; }
     }
