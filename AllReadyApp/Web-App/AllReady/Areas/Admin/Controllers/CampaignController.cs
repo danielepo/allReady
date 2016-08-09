@@ -11,7 +11,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using AllReady.Areas.Admin.Models.Validators;
-using AllReady.Areas.Admin.ViewModels.Campaign;
 
 namespace AllReady.Areas.Admin.Controllers
 {
@@ -56,7 +55,7 @@ namespace AllReady.Areas.Admin.Controllers
                 return Unauthorized();
             }
 
-            return View(new CampaignViewModel(viewModel));
+            return View(viewModel);
         }
 
         // GET: Campaign/Create
